@@ -1,0 +1,860 @@
+{
+    "units": [
+        "ics228",
+        "ics228(2)",
+        "ics228(3)",
+        "ics228(lab)",
+        "ics226"
+    ],
+
+    "ics228": {
+        "answers": [
+            [
+                "Confidentiality.",
+                "Integrity.",
+                "Availability."
+            ],
+            [
+                "information.",
+                "information existence."
+            ],
+            [
+                "Protection against unauthorized changes to information.",
+                "Protection against unauthorized changes to information by unauthorized agents.",
+                "Changes to information are internally/externally consistent."
+            ],
+            [
+                "Ability to provide information when being attacked.",
+                "Ability to provide information after being attacked."
+            ],
+            [
+                "Idenitification, Authentication, Authorization, Accountability."
+            ],
+            [
+                "Vulnerability.",
+                "Threat.",
+                "Exposure.",
+                "Exploit.",
+                "Control/CounterMeasure/Safeguard.",
+                "Risk."
+            ],
+			[
+				"Fortress Model, series of defences.",
+				"Operation Model, modern approach (protection = prevention + (detection + response)."
+			],
+			[
+				"Script kiddies (don't write attacks or discover new ones, but leverage existing tools.",
+				"Script writers (exploit known vulnerabilities, challenging to keep out).",
+				"Elite (discover new vulnerabilities, zero-day vulnerabilities)."
+			],
+			[
+				"Defender must defend against all kinds of attacks, known and unkown, attacker only needs to find on weak spot."
+			],
+			[
+				"Mitigation, use better or more controls to lower risk level.",
+				"Transfer, transfer the risk to other parties.",
+				"Elimination, get rid of the risk, i.e. remove services that bring the risk.",
+				"Acceptance, do nothing, accept the risk, i.e. if risk is a minor impact to business."
+			],
+			[
+				"Security and risk management.",
+				"Asset Security.",
+				"Security Architecture and Network Security.",
+				"Identity and Access Management.",
+				"Security Assessment and Testing.",
+				"Security Operations.",
+				"Software Development Security."
+			],
+			[
+				"Confidentiality, integrity, availability of information.",
+				"Security governance principles.",
+				"Compliance requirements.",
+				"Legal and regulatory issues relating to information security.",
+				"IT policies and procedures.",
+				"Risk-based management concepts."
+			],
+			[
+				"Data privacy.",
+				"Data classification and handling security controls."
+			],
+			[
+				"Engineering processes using secure design principles.",
+				"Fundamental concepts of security models.",
+				"Assessing and mitigating vulnerabilities in systems.",
+				"Cryptography.",
+				"Designing and implementing physical security."
+			],
+			[
+				"Secure design principles for network architecture.",
+				"Secure network components.",
+				"Secure communication channels."
+			],
+			[
+				"Physical and logical access to assets.",
+				"Identity and access provisioning lifecycle.",
+				"Identification and authentication.",
+				"Authorization mechanisms.",
+				"Accountability mechanisms."
+			],
+			[
+				"Designing and validating assessment and test strategies.",
+				"Security testing technologies.",
+				"Internal and third-party security audits."
+			],
+			[
+				"Foundational security operations concepts.",
+				"Logging and monitoring activities.",
+				"Incident management.",
+				"Disaster recovery.",
+				"Business continuity."
+			],
+			[
+				"Security in the software development lifecycle.",
+				"Security controls in development environments.",
+				"Secure coding guidelines and standards."
+			],
+			[
+				"All access to objects must be checked to ensure they are allowed (ever access request, read/ write)."
+			],
+			[
+				"Security controls should be designed as simple and small as possible.",
+				"These designs are easy to understand and analyze, leads to fewer mistakes and chances for mistakes."
+			],
+			[
+				"Access must be granted explicitly in normal system states.",
+				"By default, no access should be granted in abnormal system status."
+			],
+			[
+				"Avoid having multiple subjects using the same controls to access a resource.",
+				"Every shared control represents a potential information path betweeen users, must be designed to not unintentionally compromise security."
+			],
+			[
+				"Only the minimum necessary rights should be assigned to a subject that requests access to a resource."
+			],
+			[
+				"The security of a control should not depend on the secrecy of it's existence.",
+				"Allows design to be examined by more domain experts, leading to less design mistakes."
+			],
+			[
+				"Security controls should be user-friendly with the least efforts."
+			],
+			[
+				"More than one authorities should be involved in granting access to critical system operations (less schrutinization, chance of fraud)."
+			],
+			[
+				"Use multiple layers and multiple technologies defensive controls to provide protection."
+			],
+			[
+				"Refers to an existing design pattern or architecture to colve common security problems or requirements."
+			],
+			[
+				"No read-up, *- property rule (no write-down), only addresses information confidentiality, not information existence confidentiality."
+			],
+			[
+				"* integrity rule, no write-up, no read-down, invocation rule (subject cant invoke of higher integrity), simple integrity rule."
+			],
+			[
+				"Addresses all three integrity goals, programmed abstract operations (Transformation Procedures TP's), such as read, write, modify.",
+				"Consists of constrainted data items (CDI's), that can be manipulated by TPs, unconstrained data items (UDI's) that can be manipulated by primitive read/ write operations."
+			],
+			[
+				"Set of mathematical and logic rules used in cryptographic functions."
+			],
+			[
+				"A secret that is used as the governing parameter in the acts of a cryptographic function."
+			],
+			[
+				"All possible values under a specific key format."
+			],
+			[
+				"Act of transforming data into another format with a secret key involved."
+			],
+			[
+				"Act of transforming encrypted data into it's original format."
+			],
+			[
+				"The process of changing data into another format."
+			],
+			[
+				"The process of changing an encoded data back into it's original format."
+			],
+			[
+				"Deterrent, discourage potential hacker.",
+				"Preventative, stop incident from occuring.",
+				"Corrective, fix items after incident has occured.",
+				"Recovery, restore necessary componenents to return to normal operations.",
+				"Detective, identify an incident's activities after it took place.",
+				"Compensating, alternative control that provides similar protection as original control."
+			],
+			[
+				"Plaintext/ cleartext, message/ data in it's original format.",
+				"Ciphertext/ cryptogram, message/ data in it's encrypted format.",
+				"Transposition/ Permutation, the operations of shuffling or reordering the data in plaintext.",
+				"Substitution, the operations of replacing the data in plaintext to hide the original data.",
+				"Cryptanalysis, practice of uncovering flaws within cryptographic systems."
+			],
+			[
+				"Attacker has access to only a set of ciphertexts."
+			],
+			[
+				"Attacker has access to both the plaintext and it's encrypted version."
+			],
+			[
+				"Attacker chooses random plaintexts and obtains the corresponding ciphertexts and tries to find the encryption key."
+			],
+			[
+				"Attacker obtains decryptions of chosen ciphertexts, and attempts to find encryption key from these."
+			],
+			[
+				"Mathematical function that can be easily performed in one direction than the other."
+			],
+			[
+				"A one-way has function that is used to provide a fingerprint or digest of the message."
+			],
+			[
+				"Hash is computed over entire message, hash is a one way function so messages are not disclosed by their hash values, no collisions."
+			],
+			[
+				"Complicate the relationship between plaintext and the ciphertext (Transposition/ Permutation), small changes in plaintext leads to significant changes in ciphertext."
+			],
+			[
+				"Complicate relationship between key and ciphertext, accomplished by substitution operation, small changes in key leads to significant changes in ciphertext."
+			],
+			[
+				"Cipher must be practically indecipherable.",
+				"Cipher itself must not be secret.",
+				"Key must not be secret.",
+				"Must be portable.",
+				"Must be easy to use."
+			],
+			[
+				"Treats message as a stream of bits and performs mathematical functions (XOR) on each bit individually."
+			],
+			[
+				"The original message is divided into blocks of bits. These blocks are then put through the same mathetmatical functions."
+			],
+			[
+				"Sender and receiver use two instances of the same key for encryption and decryption."
+			],
+			[
+				"A public key and private key are used, anyone can encrypt a message using the public key, and only the person holding the private key can decrypt it."
+			],
+			[
+				"Both parties agree on large prime number p and base. They select a private key, a, b. They compute public keys (A = g^ModP, B = g^bModP), they exchange these, they compute second shared secrete key (S = B^aModP, S = A^bModP)"
+			]
+			],
+        "questions": [
+            "Fundamental Goals of Information Security?",
+            "Types of Confidentiality? (Confidentiality of...)",
+            "Integrity Ensures..?",
+            "What is meant by 'Availability'?",
+            "Common Functions of Informatioon Security?",
+            "Common Security Related Concepts?",
+			"Common models to provide sceurity?",
+			"Cause of security problems?",
+			"Security dilemma?",
+			"Four typical actions to deal with risk?",
+			"Information Security Domains from (CISSP)?",
+			"Security and Risk Management consists of?",
+			"Asset Security?",
+			"Security Architecture and Engineering?",
+			"Communications and Network Security?",
+			"Identity and Access Management?",
+			"Security Assessment and Testing?",
+			"Security Operations?",
+			"Software Development Security?",
+			"Principle of Complete Mediation?",
+			"Principle of Economy of Mechanism?",
+			"Principle of Fail-Secure Defaults?",
+			"Principle of Least Common Mechanism?",
+			"Principle of Least Privelage?",
+			"Principle of Open Design?",
+			"Principle of Phsychological Acceptance?",
+			"Principle of Seperation of Privelage?",
+			"Principle of Defense in Depth?",
+			"Security Design Models?",
+			"Bell-LaPadula Model?",
+			"Biba Model?",
+			"Clark-Wilson Rule?",
+			"Cipher/ Algorithm?",
+			"Key?",
+			"Keyspace?",
+			"Encryption/ Encipher?",
+			"Descryption/ Decipher?",
+			"Encoding?",
+			"Decoding?",
+			"Common Security Control Types?",
+			"Cryptograph Concepts/ Definitions?",
+			"Ciphertext-Only Attack?",
+			"Known-Plaintext Attack?",
+			"Chosen-Plaintext Attack?",
+			"Chosen-Ciphertext Attack?",
+			"One-Way Function?",
+			"Characteristics of a Strong Hash Function?",
+			"Diffusion, Specifically Good Diffusion?",
+			"Confusion, Specifically Good Confusion?",
+			"Design Principles for Military Use of Ciphers?",
+			"Stream Ciphers?",
+			"Block Ciphers?",
+			"Symmetric Ciphers?",
+			"Asymmetric Ciphers?",
+			"Diffie-Hellman Key Exchange?"
+        ]
+    },
+    "ics228(2)": {
+        "answers": [
+			[
+				"Provide data confidentiality by ensuring data cannot be read except by valid recipient.",
+				"Provide data integrity by allowing valid data recipients to verify that data has not been altered.",
+				"Provide authenticity by verifying a valid user's identity through user's secret keys.",
+				"Provide accountability (Nonrepudiation) by proving the origin of data, thereby preventing the data sender from denying that he sent the messsage."
+			],
+			[
+				"Data at rest. (database encryption, file encryption).",
+				"Data at transit. (SSL/TLS, IPSec).",
+				"Data at display. (data masking).",
+				"Data at use. (data de-identifying/data anonymization)."
+			],
+			[
+				"Hash Value, can use different hash functions to produce a hash value.",
+				"Message Authentication Code, sending encrypted message and using shared key to decrypt it.",
+				"Digital Signature, send data, plus a digital signature thats created using an algorithm, receiver knows how to decrypt, compares data and digital signature."
+			],
+			[
+				"Hash has integrity, no authentication, no non-repudiation, no keys.",
+				"MAC has integrity, authentication, no non-repudiation, symmetric keys.",
+				"Digital Signature has integrity, authentication, non-repudiation, asymmetric keys."
+			],
+			[
+				"The mechanism used to associate a key with a collection of related components in a manner that is sufficient to uniquely identify a public key owner."
+			],
+			[
+				"A set of hardware, software, people, policies, and procedures needed to create, manage, distribute, use, store, and revoke Digital Signatures."
+			],
+			[
+				"A self-signed digital certificate file issued by a trusted CA and saved in the trust store of your local machine."
+			],
+			[
+				"A digital certificate cross-signed (cross-certified) by another CA. Before accepting the certificate, your local applications will have to validate the signature with some already trusted CA certificate."
+			],
+			[
+				"A digital issued and signed by some CA to the domain that provides secure communications. These certificates will be downloaded and verified by the  domain customers."
+			],
+			[
+				"The entire process of ensuring keys are protected during creation, distribution, transmission, storage, destruction."
+			],
+			[
+				"A tamper-proof chip installed on computer motherboards that is responsible for managing symmetric and asymmetric keys, encryption/decryption, and other cryptographic related operations."
+			],
+			[
+				"Hardware devices that can reside on a computer motherboard, but the more advanced models are contained in their own chassis as an external device and can be accessed via the network."
+			],
+			[
+				"The expression of the idea instead of the idea itself."
+			],
+			[
+				"Legal ownership of an invention, the physical form."
+			],
+			[
+				"A word, name, symbol, sound, shape, color, or combination of these, which represents their company to a group of people or to the world."
+			],
+			[
+				"Means the company properly investigated all of it's product's possible weaknesses and vulnerabilities."
+			],
+			[
+				"The organization takes all responsible actions after obtaining weakness and vulnerability reports."
+			],
+			[
+				"The flow of information between a subject (entity that requests access) and an object (passive entity that contains information or needed functionality)."
+			],
+			[
+				"Identification, control of identifying a subject (user,program,process).",
+				"Authentication, control of ensuring a subject is the entity it claims to be (password,secret token,unique tattoo, etc).",
+				"Authorization, control to determine if this subject has been given the nexessary rights and privelages to carry out the requested actions.",
+				"Accountability, control to ensure subjects are accountable for their actions (non-repudiation)."
+			],
+			[
+				"Identity that can be used across multiple organizations or domains."
+			],
+			[
+				"Each identity value should be unique to each different entity.",
+				"A standard naming scheme should be followed in the same organization.",
+				"The identity value should be non-descriptive of entitie's position, roles or tasks."
+			],
+			[
+				"Knowledge factor, something a user knows.",
+				"Ownership factor, something a user has or possesses.",
+				"Characteristic factor, something a user is."
+			],
+			[
+				"Online password guessing, (account lockout after several failed logon attempts).",
+				"Attack password reset, (secure design for password reset process).",
+				"Phishing, (be aware, smart, educated).",
+				"Shoulder surfacing, (password masking, watch your back)."
+			],
+			[
+				"Dictionary attack, occurs when attackers use a dictionary of common words, (complex your password).",
+				"Brute force attack, more difficult to carry out because they work through all possible combinations of numbers and characters, (reasonable length of password).",
+				"Rainbow table attack, use a lookup table that has a large list of pre-computed hashes for commonly-used passwords, (store a hash of the password + extra data, e.g. Salt, preferably unique to each password entry)."
+			],
+			[
+				"Synchronous Token, generates a unique password at fixed time intervals.",
+				"Asynchronous Token, generates the password based on a challenge/response technique with the authentication server.",
+				"Memory Card, contains user authentication information that can be read out by a card reader.",
+				"Smart Card, able to accept,store, and send data, there are contact and contactless cards, as well as hybrids."
+			],
+			[
+				"Physiological and Behavioural Characteristics, retina scan, fingerprint, facial scan, signature dynamics, keystroke dynamics (typing speed), mouse movement dynamics."
+			],
+			[
+				"Uses two more more of the three authentication factors."
+			],
+			[
+				"Ability to perform some actions, (read, write, create, delete, execute, etc.)"
+			],
+			[
+				"Actions related to some resources, (read from file1, write to file2, execute file3, etc.)"
+			],
+			[
+				"A collection of users."
+			],
+			[
+				"A collection of permissions."
+			],
+			[
+				"A table that consists of a list of subjects, list of objects, list of rights that a subject can take upon each object."
+			],
+			[
+				"Uses specific rules that indicate what can and cannot happen between a subject and an object."
+			],
+			[
+				"Restricts users' access abilities by not allowing them to request certain functions or information, or to have access to specific system resources."
+			],
+			[
+				"Access decision is determined by the content within the object."
+			],
+			[
+				"User, system, and application activities (Audit Trails/Logs)."
+			],
+			[
+				"Allows a user to enter credentials one time and be able to access multiple distributed network resources in the same network domain."
+			]
+			],
+        "questions": [
+			"Cryptographic Services/Functions?",
+			"Data States that Data Confidentiality Protects?",
+			"Different Applications for Data Integrity (also Authenticity and Nonrepudiation in some cases) Checking?",
+			"Hash vs Mac vs Digital Signature.",
+			"A certificate is..?",
+			"A Public Key Infrastructure (PKI) is..?",
+			"A Root Certificate is..?",
+			"A Intermediate Certificate is..?",
+			"A Server Certificate is..?",
+			"Key Management is..?",
+			"Trusted Platform Module (TPM) is..?",
+			"Hardware Security Modules (HSM) are..?",
+			"Copyright?",
+			"Patent?",
+			"Trademark?",
+			"Due Diligence?",
+			"Due Care?",
+			"Access?",
+			"Access Control Key Elements?",
+			"Federated Identity?",
+			"Identification Data Requirements?",
+			"Three Factors for Authentication?",
+			"Online Authentication Threats, and Controls?",
+			"Offline Authentication Threats, and Controls?",
+			"Ownership Factor Examples?",
+			"Characteristic Factor Examples?",
+			"Characteristics of strong authentication?",
+			"What is a 'Right'?",
+			"What are 'Permissions'?",
+			"What is a 'Group'?",
+			"What is a 'Role'?",
+			"What is an Access Control Matrix (ACM)?",
+			"What is rule-based Control?",
+			"What does a Constrained User Interface do?",
+			"What is Content-Dependent Control?",
+			"Accountability is tracked by recording..?",
+			"What is single sign-on?"
+        ]
+    },
+    "ics228(3)": {
+        "answers": [
+			[
+				"Programs that inserts itself into another program and then performs some malicious action when its host gets executed."
+			],
+			[
+				"Independent programs that replicate themselves from system to system without the use of a host file."
+			],
+			[
+				"Unwanted scripts or code downloaded when a victim visits a site."
+			],
+			[
+				"Authorized without knowing full implications, click a to deceptive fake security alert, downloading an executable while ignoring warning messages.",
+				"Fully unauthorized without any notification, you visit a site and get infected without any prompts or further action."
+			],
+			[
+				"Software application or code that views and records user activities."
+			],
+			[
+				"Refers to a hidden entrance into a system. Can be caused by legitimate service with special password, or software vulnerability, or rogue service providing hidden access."
+			],
+			[
+				"Software or code that prompt message to scare users into doing some, possibly, harmful, action."
+			],
+			[
+				"Software that makes the victim machine become a zombie machine of a large network. Infection that spreads to other computers on the network."
+			],
+			[
+				"Software that encrypts vital documents on a computer, then demands a random for the unlock key."
+			],
+			[
+				"Modified version of underlying operating system functions (Kernel Functions)."
+			],
+			[
+				"A useful-looking application designed to trick a user into running it, once run, application goes on to some malicious actions in addition to 'useful-looking actions'."
+			],
+			[
+				"Signature-Based Detection, detect known malware file signatures.",
+				"Heuristic Analysis (Real-Time Blocking), looks at behavior of system or software to detect new threats.",
+				"SandBoxing, detect malware by testing potentially malicious code in an isolated virtual environment.",
+				"Application Whitelisting, validates and controls all aspects of what a process is allowed to do, and blocks applications from doing everything except what they're supposed to do."
+			],
+			[
+				"Automatic, some processes aren't scanned by real-time protection, but are still subject to quick, full, or on-demand antivrius scans.",
+				"Built-In, certain operating system files that are excluded by Microsoft Defender Virus on all version of Windows.",
+				"Custom, files and folders that you specify to evade malware detection."
+			],
+			[
+				"Anti-Debugging Techniques/ Anti-VM/Anti-Sandbox techniques make this much more challenging.",
+				"Malware Encryption with different keys allows the same malware to have different signatures on different computers.",
+				"Fileless Malware, makes most of the anti-malware solutions useless."
+			],
+			[
+				"Is a hardware and/or software device installed at the environment perimiter, which filters network traffic to block unauthorized networks access, while permitting authorized network communications."
+			],
+			[
+				"Is a software or hardware device installed inside the network to detect and report security incidents or intrusion attempts in the environment."
+			],
+			[
+				"Host-based, monitoring hard drive and in/outbound network packets to the hosts, constantly searching for malicious changes.",
+				"Network-based, monitoring network activities to detect malicious intent, such as abnormal network visits, or unusual network ports being opened.",
+				"Application-based, monitoring uses of a specific application to detect misuse or attacking activities of that particulat application.",
+				"Anomaly-based, constantly track activity within specific scope and compare results against pre-created normal activity profile.",
+				"Signature-based, compare activities or files with known bad activities for file signatures."
+			],
+			[
+				"Time-to-market contraints, thus do not take time for proper security architecture, design, testing.",
+				"It is not esay to show Return on security investment (ROSI), thus security is sometimes an afterthought approach.",
+				"Systems are getting more complicated, software developers make false assumptions when building individual components.",
+				"Most software developers do not have complete insight to security vulnerability issues.",
+				"Developers often implement hidden features for self-testing purposes, which can create security issues if not cleanup up properly.",
+				"Ability to disable security controls/features for user convenience and performance."
+			],
+			[
+				"Requirements, security requirements.",
+				"Design, threat modeling.",
+				"Development, static application vulnerability scan.",
+				"Testing/Validation, dynamic application vulnerability scan, manual security testing.",
+				"Release/Maintenance, security evaluation and certification."
+			],
+			[
+				"A database process used to prevent data inference violations by enabling relation to contain multiple tuples with the same primary keys with each instance distinguished by a security level. Prevents low-level database users from inferring the existence of higher level data."
+			],
+			[
+				"A systematic approach used to understand how different threats could be realized and how successful compromise could take place."
+			],
+			[
+				"Risk calculation to calculate the average of numeric values assigned to risk ranking factors."
+			],
+			[
+				"Process of identifying known insecure coding patterns in the source code. Typically relies on tools to get the job done automatically."
+			],
+			[
+				"Process of analyzing an application through the application interface to find vulnerabilities through simulated attacks."
+			],
+			[
+				"Targeted, limit testing activities to specific applications/systems",
+				"External, targets a company's externally visible servers to find out if an attacker can get in, and how far they can get in.",
+				"Internal, mimics an inside attack behind the firewall by an authorized user with standard access priveleges to find out how much damage a disgruntled employee could cause."
+			],
+			[
+				"Information Gathering, study system design, implementation, and operating procedures.",
+				"Flaw Hypothesis (Test Case Creations), look at functions/features interacting with external environment, think of misuse cases. Look at control/ restrictions design and try to break them.",
+				"Flaw Testing, backup data/configurations if exploiting in production enviroment, demonstrate the flaw without exploiting it to avoid unnecessary damage/disruptions.",
+				"Reporting, include exploitation details, include risk analysis for each identified vulnerability, include mitigation plans."
+			],
+			[
+				"Examination process to determine its degree of compliance with some security standard or specification. Application or system can be certified by evaluation party if it passes."
+			]
+			],
+        "questions": [
+			"Viruses are..?",
+			"Worms are..?",
+			"Drive-by Downloads are..?",
+			"Main Ways Malicious Drive-By Downloads Get Into Devices?",
+			"What is Spyware?",
+			"What are Backdoors/ Trapdoors?",
+			"What are Hoaxes?",
+			"What is A Botnet Agent?",
+			"What is Ransomware? (Biggest malware threat in recent years).",
+			"What is a Rootkit? (Most dangers malware, hard to detect and remove).",
+			"Trojan Horses?",
+			"Common Malware Detection Techniques?",
+			"Windows Defender Antivirus Exclusions?",
+			"Challenges Detecting and Defending Advanced Malware?",
+			"What is a firewall?",
+			"What is an Intrusion Detection System (IDS)?",
+			"IDS Solutions Consist of?",
+			"How are Security Issues Usually Created in Software Development?",
+			"Software Development Lifecycle, and security activities in each one?",
+			"Polyinstantiation?",
+			"Threat Modeling?",
+			"Damage Potential, Reproducability, Exploitability, Affected Users, and Discoverability. (DREAD) Technique?",
+			"Static Application Security Scanning. (SAST) Technique?",
+			"Dynamic Application Security Scanning. (DAST) Technique?",
+			"Manual Security Testing Consists of These Testing Types?",
+			"Manual Security Testing Common Procedures?",
+			"Security Evaluation is..?"
+        ]
+    },
+    "ics228(lab)": {
+        "answers": [
+			[
+				"A Secure configuration posture established to harden a computer host system for it's specific roles in the environment."
+			],
+			[
+				"Hardware, Firmware, BIOS/UEFI, Software."
+			],
+			[
+				"Motherboard, Hard Drive, DVD Drive, Various Adapters (Network Adapter, USB Adaptors)."
+			],
+			[
+				"Form of microcode or program embedded into hardware devices."
+			],
+			[
+				"Firmware that connects the hardware and the operating system."
+			],
+			[
+				"Collection of instructions, data, computer programs that enable a computer to perform specific tasks. Such as the operating system, various applications."
+			],
+			[
+				"Determines security levels at which different subjects and objects operate at. CPU dictates how many there are, OS dictates how many are used, and how they are used."
+			],
+			[
+				"Application, operating system, server, database, network."
+			],
+			[
+				"Physical arrangedment of computers and devices."
+			],
+			[
+				"A device which only repeats electrical signals between cable segments, which enables it to extend a network. Don't seperate collision domains."
+			],
+			[
+				"A device used to connect LAN segments. Works with MAC addresses. Amplifies electrical signal. Allows admin to filter frames based on MAC addresses. Seperates collision domain, but not broadcast domain."
+			],
+			[
+				"A multiport bridging device, each port provides dedicated bandwidth to the device attached to it."
+			],
+			[
+				"A device that has two or more interfaces to connect similar or different networks. Works with IP addresses, knows how to get packets to their destinations based on local routing table. Can seperate broadcase domain."
+			],
+			[
+				"Used to resolve hostnames to IP addresses so names can be used instead of IP addresses within networked environments."
+			],
+			[
+				"Used to assign hardware addresses, it maps the hardware address (MAC address) and associated IP address, and stores this mapping it is table for a predefined amount of time."
+			],
+			[
+				"Used to assign IP addresses to network clients in real time."
+			],
+			[
+				"Used to test connectivity and troubleshoot problems on IP networks."
+			],
+			[
+				"32-bit addresses. Each byte, or 8-bit segment of the address, is divided by a period and typically expressed as a number 0-255."
+			],
+			[
+				"128 bits, or 16 bytes long. Commonly displayed using colon-hexadecimal notation. First 48 bits are network address, next 16 bits are subnet address, remaining 64 bits are used to identify host for particular network."
+			],
+			[
+				"Gateway service that performs transparent routing and address translation. Hides internal IP addresses for any data frames that leave internal network."
+			],
+			[
+				"Static, software has a pool of public IP addresses configured. Each private address is statically mapped to a specific public address.",
+				"Dynamic, software has a pool of IP addresses, but instead of statically mapping a public address to a specific private address, it works on a first-come, first-served basis.",
+				"Port address translation (PAT), software uses only one public IP address for all private addresses on the internal network."
+			],
+			[
+				"Redirection of a communication request from one address and port number combination to another address and port combination."
+			],
+			[
+				"Establishes a secure connection between your computer and a remote service."
+			],
+			[
+				"Allows users to communicate with remote computers and servers to use their resources, in a LAN environment."
+			],
+			[
+				"Allows users to copy an entire file from one computer to another."
+			],
+			[
+				"A free open source utility to help with network discovery and security auditing."
+			],
+			[
+				"Find out what hosts are available on the network.",
+				"Determine what services (application name and version) hosts on the network are running.",
+				"Discover what operating systems (and OS versions) hosts on the network are running.",
+				"Check what type of packet filters/firewalls are in use on hosts on the network.",
+				"Scan for some known vulnerabilities on hosts on the network."
+			],
+			[
+				"Open, some application is using it.",
+				"Closed, it is not being used.",
+				"Filtered, a firewall or some other network obstacle is blocking it.",
+				"Unfiltered, cannot determine if they are open or closed."
+			],
+			[
+				"nmap[Scan Type(s)][Options]{target specification}."
+			],
+			[
+				"Save all data packets received."
+			],
+			[
+				"Only save data packets destined to reach your network interface, broadcast packets, multicast packets."
+			],
+			[
+				"Communicate with the access point only."
+			],
+			[
+				"A read-only mode including all data frames passing by (even frames intended for other machines or network devices can be read)."
+			],
+			[
+				"Only used by wireless access point, only communicate with connected clients in managed mode."
+			],
+			[
+				"A peer-to-peer mode with no central access point."
+			],
+			[
+				"A network packet sniffer and analyzer. It presents captured packet data in as much detail as possible."
+			],
+			[
+				"An attacker can setup a rogue DNS server in a LAN environment to respond a victim local DNS cache with incorrect DNS information, which would point the victim to a malicious web site."
+			],
+			[
+				"A free toolkit to carry out a number off services including enumeration, spoofing, brute forcing, also comes with pre-built udp/tcp clients/servers."
+			],
+			[
+				"Awareness of your entire DNS setup.",
+				"Hardening your local DNS server.",
+				"Monitor DNS entries for strange changes (i.e. Query one domain, but returns multiple domain IP addresses.)",
+				"Use DNSSec to verify the source of DNS entry change requests."
+			],
+			[
+				"Hosts maintain an ARP cache, mapping of IP/MAC addresses, if the host doesnt know the MAC, it sends an ARP request packet, not designed for security, so reply is not checked for authorized party. Also lets hosts accept ARP responses, even if they were never sent out."
+			],
+			[
+				"Static ARP entries Mapping (doesn't scale well).",
+				"ARP spoofing detection and prevention software (existence of multiple IP addresses associated with a single MAC address may indicate ARP Spoofing attack.)"
+			],
+			[
+				"Requires a victim, service provider, main in the middle that intercepts communications."
+			],
+			[
+				"Make sure HTTPS is always in the URL bar, not HTTP.",
+				"Never connect to public Wi-Fi routers without using extra end-to-end security communication protection.",
+				"Always keep the security software up to date."
+			],
+			[
+				"A free open source interactive HTTP/HTTPS proxy, it can be used to intercept, inspect, modify, reply web traffic such as HTTP/1, HTTP/2, WebSockets, any other SSL/TLS-protected protocols."
+			],
+			[
+				"Attacker has a certificate that the victime machine trusts (different ways to accomplish this.)",
+				"Attacker sets up a https proxy (e.g. mitmproxy tool), with the victime-trusted certificate.",
+				"Attacker redirects victime network traffic using either DNS or ARP spoofing attack."
+			],
+			[
+				"A method of creating an encrypted channel between an SSH client and a SSH server machine for network communications."
+			],
+			[
+				"Forwards a connection from the SSH client host to the SSH server host and then to the destination host port."
+			],
+			[
+				"Forwards a port from the server host to the client host then to the desination port."
+			],
+			[
+				"Creats a SOCKS proxy server that allows communication across a range of ports."
+			],
+			[
+				"A penetration testing platform which contains a suite of tools that can be used to test security vulnerabilities, enumerate networks, execute attacks, and evade detection."
+			],
+			[
+				"An advanced, stealthy, powerful, and in-memory-only payload, that once running on the victim machine, will allow the attacker to control remotely, the victim machine."
+			]
+			],
+        "questions": [
+			"What is a Security Benchmark?",
+			"What Does a Host Consist Of?",
+			"What is Hardware?",
+			"What is Firmware?",
+			"What is BIOS/UEFI?",
+			"What is Software?",
+			"What are Protection Rings?",
+			"Different Types of System Hardening?",
+			"What is Network Topology?",
+			"What is a Repeater?",
+			"What is a Bridge?",
+			"What is a Switch?",
+			"What is a Router?",
+			"What is Domain Name Service (DNS)?",
+			"What is Address Resolution Protocol (ARP)?",
+			"What is Dynamic Host Configuration Protocol (DHCP)?",
+			"What is Internet Control Message Protocol (ICMP)?",
+			"What is an IPv4 address?",
+			"What is an IPv6 address?",
+			"What is Network Address Translation (NAT)?",
+			"Types of Mapping that NAT Uses?",
+			"What is Port Forwarding/Mapping?",
+			"What Does a Virtual Private Network (VPN) do?",
+			"What is Server Message Block Protocol (SMB)?",
+			"What is File Transfer Protocol (FTP)?",
+			"What is Network Mapper (NMAP)?",
+			"Features of NMAP?",
+			"NMAP's possible output values for the state of a scanned port?",
+			"What does the usage of NMAP look like in a shell?",
+			"What is Promiscuous Mode of an NIT (Network Interface Card)?",
+			"What is Non-Promiscuous Mode of an NIT (Network Interface Card)?",
+			"What is Managed Mode of an NIT (Network Interface Card)?",
+			"What is Monitor Mode of an NIT (Network Interface Card)?",
+			"What is Master Mode of an NIT (Network Interface Card)?",
+			"What is Ad hoc Mode of an NIT (Network Interface Card)?",
+			"What is Wireshark?",
+			"What is a DNS Spoofing Attack?",
+			"What is Netwox?",
+			"Dns Spoofing Attack Countermeasures?",
+			"What is an ARP Spoofing Attack?",
+			"ARP Spoofing Attack Countermeasures?",
+			"What is a man-in-the-middle Attack?",
+			"How to Avoid man-in-the-middle (MITM) Attacks?",
+			"What is Mitmproxy?",
+			"How to break HTTPS Connection Without Browser Warnings? (Choose a step that is part of this.)",
+			"What is SSH Tunelling?",
+			"What is Local Port Forwarding?",
+			"What is Remote Port Forwarding?",
+			"What is Dynamic Port Forwarding?",
+			"What is Metasploit framework?",
+			"What is the Meterpeter Payload?"
+        ]
+    },
+    "ics226": {
+        "answers": [
+			[
+				""
+			]
+			],
+        "questions": [
+			""
+        ]
+    }
+}
